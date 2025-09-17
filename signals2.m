@@ -1,5 +1,5 @@
 %% Signal Generation and Plotting in MATLAB
-% Author: Student
+% Author: Rupashri Das
 % Date: September 2025
 % Description: This script generates and plots six fundamental signals
 % used in signal processing and IoT applications
@@ -171,15 +171,7 @@ xlim([-8 8]);
 % Adjust overall layout
 sgtitle('Fundamental Signals in Continuous Time', 'FontSize', 16, 'FontWeight', 'bold');
 
-%% Save figures (optional)
-% Uncomment the following lines to save figures as PNG files
-% saveas(figure(1), 'unit_impulse.png');
-% saveas(figure(2), 'unit_step.png');
-% saveas(figure(3), 'unit_ramp.png');
-% saveas(figure(4), 'exponential.png');
-% saveas(figure(5), 'signum.png');
-% saveas(figure(6), 'sinc.png');
-% saveas(figure(7), 'all_signals_combined.png');
+
 
 %% Display signal properties
 fprintf('\n=== Signal Properties ===\n');
@@ -191,4 +183,5 @@ fprintf('Step signal final value: %.1f\n', max(step));
 fprintf('Ramp signal max value: %.1f\n', max(ramp));
 fprintf('Exponential initial value: %.2f\n', exponential(zero_index));
 fprintf('Sinc signal peak value: %.3f\n', max(sinc_signal));
+
 fprintf('\nAll figures generated successfully!\n');
